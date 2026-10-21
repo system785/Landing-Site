@@ -1326,6 +1326,13 @@ p:last-child { margin-bottom: 0; }
 .btn--max:hover { filter: brightness(1.06); box-shadow: 0 18px 38px rgba(15, 154, 102, .45); }
 .link-max { color: #2BD07A; font-weight: 600; }
 .link-max:hover { color: #33E28C; }
+
+/* Кнопки-ссылки внутри текста статьи: не красить ссылочным синим и без подчёркивания */
+.prose a.btn { text-decoration: none; }
+.prose a.btn--cta { color: #231000; }
+.prose a.btn--ghost, .prose a.btn--max { color: #fff; }
+.prose a.btn--outline { color: var(--text); }
+.prose a.btn--outline:hover { color: var(--brand); }
 .fab__wa { background: linear-gradient(135deg, #33E28C, #0F9A66); }
 .fab__top {
   width: 46px;
