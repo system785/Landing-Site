@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 560" width="480" height="560" role="img" aria-label="Портрет веб-разработчика Макса — мужчины 45 лет, улыбается">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#27355F"/>
+      <stop offset="1" stop-color="#10172E"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6A6055"/>
+      <stop offset="1" stop-color="#4A443C"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243357"/>
+      <stop offset="1" stop-color="#18233F"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E4EBF8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".4" r=".6">
+      <stop offset="0" stop-color="#6E8BFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#6E8BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="skin" x1=".2" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#F4CBA6"/>
+      <stop offset="1" stop-color="#E8B68D"/>
+    </linearGradient>
+    <clipPath id="frame">
+      <rect width="480" height="560" rx="34"/>
+    </clipPath>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <!-- Фон -->
+    <rect width="480" height="560" fill="url(#bg)"/>
+    <circle cx="398" cy="84" r="150" fill="url(#glow)"/>
+    <circle cx="64" cy="470" r="170" fill="#FF7A18" opacity=".14"/>
+    <circle cx="440" cy="440" r="90" fill="#7C4DFF" opacity=".28"/>
+    <g fill="#FFFFFF" opacity=".07">
+      <circle cx="58" cy="70" r="4"/>
+      <circle cx="96" cy="118" r="2.5"/>
+      <circle cx="424" cy="212" r="3.5"/>
+      <circle cx="40" cy="248" r="2.5"/>
+      <circle cx="446" cy="330" r="2.5"/>
+    </g>
+
+    <!-- Тень фигуры -->
+    <ellipse cx="240" cy="546" rx="196" ry="46" fill="#050913" opacity=".45"/>
+
+    <!-- Плечи / пиджак -->
+    <path d="M40 560 C55 468 106 408 176 393 L304 393 C374 408 425 468 440 560 Z" fill="url(#jacket)"/>
+    <!-- Рубашка -->
+    <path d="M168 396 L312 396 L250 494 L240 560 L230 494 Z" fill="url(#shirt)"/>
+    <!-- Воротник -->
+    <path d="M240 452 L202 396 L180 408 L228 470 Z" fill="#FFFFFF"/>
+    <path d="M240 452 L278 396 L300 408 L252 470 Z" fill="#EFF3FC"/>
+    <!-- Лацканы -->
+    <path d="M174 410 L230 494 L240 560 L110 560 C118 478 142 432 174 410 Z" fill="#223155"/>
+    <path d="M306 410 L250 494 L240 560 L370 560 C362 478 338 432 306 410 Z" fill="#1B2849"/>
+    <path d="M174 410 L230 494" stroke="#33456F" stroke-width="2" fill="none"/>
+    <path d="M306 410 L250 494" stroke="#33456F" stroke-width="2" fill="none"/>
+
+    <!-- Шея -->
+    <path d="M206 276 L206 396 C206 416 274 416 274 396 L274 276 Z" fill="#E6B78E"/>
+    <ellipse cx="240" cy="356" rx="50" ry="26" fill="#C99469" opacity=".32" filter="url(#soft)"/>
+
+    <!-- Уши -->
+    <ellipse cx="151" cy="243" rx="15" ry="23" fill="#EABA91"/>
+    <path d="M151 233 C157 236 157 250 151 253" stroke="#CE9A70" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <ellipse cx="329" cy="243" rx="15" ry="23" fill="#EABA91"/>
+    <path d="M329 233 C323 236 323 250 329 253" stroke="#CE9A70" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Лицо -->
+    <path d="M240 96 C296 96 327 136 328 197 C330 246 321 294 300 324 C282 348 262 358 240 358 C218 358 198 348 180 324 C159 294 150 246 152 197 C153 136 184 96 240 96 Z" fill="url(#skin)"/>
+
+    <!-- Свет на лбу -->
+    <ellipse cx="238" cy="164" rx="62" ry="30" fill="#FFFFFF" opacity=".22"/>
+    <!-- Щёки -->
+    <ellipse cx="188" cy="278" rx="24" ry="15" fill="#E79C7C" opacity=".28"/>
+    <ellipse cx="292" cy="278" rx="24" ry="15" fill="#E79C7C" opacity=".28"/>
+
+    <!-- Волосы -->
+    <path d="M150 206 C148 132 184 86 240 85 C297 84 333 131 330 208 C324 174 313 152 297 142 C272 168 210 170 186 145 C167 156 155 176 150 206 Z" fill="url(#hair)"/>
+    <path d="M156 196 C160 168 170 152 184 144 C172 160 164 178 160 202 Z" fill="#A8A196" opacity=".85"/>
+    <path d="M324 196 C320 168 310 152 296 144 C308 160 316 178 320 202 Z" fill="#A8A196" opacity=".85"/>
+    <path d="M214 116 C236 104 268 106 286 122" stroke="#8A8175" stroke-width="5" stroke-linecap="round" fill="none" opacity=".7"/>
+
+    <!-- Брови -->
+    <path d="M190 219 C204 209 222 208 235 214" stroke="#544C41" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+    <path d="M245 214 C258 208 276 209 290 219" stroke="#544C41" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Глаза -->
+    <g>
+      <ellipse cx="211" cy="238" rx="16" ry="10" fill="#FFFFFF"/>
+      <circle cx="212" cy="238" r="8" fill="#5A4632"/>
+      <circle cx="212" cy="238" r="3.6" fill="#181109"/>
+      <circle cx="209" cy="234.5" r="2.4" fill="#FFFFFF"/>
+      <path d="M195 235 C203 227 220 227 228 235" stroke="#B98460" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M197 247 C205 252 218 252 226 247" stroke="#D9A47A" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".8"/>
+    </g>
+    <g>
+      <ellipse cx="269" cy="238" rx="16" ry="10" fill="#FFFFFF"/>
+      <circle cx="268" cy="238" r="8" fill="#5A4632"/>
+      <circle cx="268" cy="238" r="3.6" fill="#181109"/>
+      <circle cx="265" cy="234.5" r="2.4" fill="#FFFFFF"/>
+      <path d="M252 235 C260 227 277 227 285 235" stroke="#B98460" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+      <path d="M254 247 C262 252 275 252 283 247" stroke="#D9A47A" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".8"/>
+    </g>
+    <!-- Морщинки у внешних уголков глаз (возраст 45) -->
+    <path d="M192 231 l-10 -5 M191 239 l-11 -1 M193 247 l-10 4" stroke="#CE9A70" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+    <path d="M288 231 l10 -5 M289 239 l11 -1 M287 247 l10 4" stroke="#CE9A70" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+
+    <!-- Нос -->
+    <path d="M240 248 C244 258 251 266 253 272 C251 279 229 279 227 272 C229 266 236 258 240 248 Z" fill="#EDBE97" opacity=".55"/>
+    <ellipse cx="230" cy="273" rx="4" ry="2.8" fill="#C8946B"/>
+    <ellipse cx="250" cy="273" rx="4" ry="2.8" fill="#C8946B"/>
+    <path d="M229 275 C235 280 245 280 251 275" stroke="#CE9A70" stroke-width="3" fill="none" stroke-linecap="round" opacity=".85"/>
+
+    <!-- Улыбка -->
+    <path d="M196 292 C220 287 260 287 284 292 C274 320 206 320 196 292 Z" fill="#8A3A41"/>
+    <path d="M203 294 C224 290 256 290 277 294 C269 306 211 306 203 294 Z" fill="#FFFFFF"/>
+    <path d="M214 314 C226 322 254 322 266 314 C256 326 224 326 214 314 Z" fill="#C9726C" opacity=".85"/>
+    <!-- Складки от улыбки -->
+    <path d="M191 282 C183 298 184 314 192 326" stroke="#D2A077" stroke-width="3.4" fill="none" stroke-linecap="round" opacity=".8"/>
+    <path d="M289 282 C297 298 296 314 288 326" stroke="#D2A077" stroke-width="3.4" fill="none" stroke-linecap="round" opacity=".8"/>
+
+    <!-- Подбородок -->
+    <path d="M222 336 C232 344 248 344 258 336" stroke="#D2A077" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"/>
+  </g>
+  <rect x="0.5" y="0.5" width="479" height="559" rx="34" fill="none" stroke="#FFFFFF" stroke-opacity=".18"/>
+</svg>

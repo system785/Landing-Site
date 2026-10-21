@@ -1,0 +1,25 @@
+# robots.txt для сайта «Создание сайтов для Яндекс.Директ»
+# Сайт: https://system785.github.io/Landing-Site/
+# Репозиторий проекта: https://github.com/system785/Landing-Site
+
+User-agent: *
+Allow: /
+Disallow: /cgi-bin/
+
+# Хост для Яндекса (мобильная версия)
+Host: https://system785.github.io/Landing-Site/
+
+# Карта сайта
+Sitemap: https://system785.github.io/Landing-Site/sitemap.xml
+
+# ---------------------------------------------------------------
+# Плохим ботам вход закрыт
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+# ---------------------------------------------------------------
