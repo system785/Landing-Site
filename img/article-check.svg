@@ -48,7 +48,7 @@
       <g transform="translate(776,242)">
         <rect width="46" height="46" rx="14" fill="url(#a2)"/>
         <path d="M14 24 l8 9 11 -16" stroke="#04210F" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="64" y="31">Фиксированная цена</text>
+        <text x="64" y="31">Понятная цена</text>
       </g>
       <g transform="translate(776,316)">
         <rect width="46" height="46" rx="14" fill="url(#a2)"/>

@@ -1,4 +1,4 @@
-# robots.txt для сайта «Создание сайтов для Яндекс.Директ»
+# robots.txt для сайта «Создание сайтов для бизнеса»
 # Сайт: https://system785.github.io/Landing-Site/
 # Репозиторий проекта: https://github.com/system785/Landing-Site
 

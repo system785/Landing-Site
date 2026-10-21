@@ -321,12 +321,35 @@ p:last-child { margin-bottom: 0; }
 .header__inner {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
   width: 100%;
   max-width: var(--container);
   margin-inline: auto;
   padding-inline: 22px;
 }
+
+.header__brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  flex: none;
+  margin-right: 8px;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  color: #fff;
+  transition: color .3s ease;
+}
+.header__brand i {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  opacity: .55;
+}
+.header.is-scrolled .header__brand { color: var(--text); }
 
 .logo {
   display: inline-flex;
@@ -359,7 +382,7 @@ p:last-child { margin-bottom: 0; }
 .nav {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   margin-left: auto;
   flex: 1 1 auto;
   justify-content: flex-end;
@@ -367,7 +390,7 @@ p:last-child { margin-bottom: 0; }
 }
 .nav a {
   position: relative;
-  padding: 9px 13px;
+  padding: 9px 10px;
   border-radius: 10px;
   font-size: 15px;
   font-weight: 700;
@@ -809,6 +832,23 @@ p:last-child { margin-bottom: 0; }
 }
 .price-note b { color: var(--text); }
 
+/* Компактный прайс вместо трёх тарифов */
+.price-single {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  align-items: stretch;
+  max-width: 960px;
+  margin-inline: auto;
+}
+.price-single .price-card { display: flex; flex-direction: column; }
+.price-single .price-card__desc { margin-bottom: 4px; }
+.price-single .price-card ul { margin-bottom: 18px; }
+
+@media (max-width: 860px) {
+  .price-single { grid-template-columns: 1fr; }
+}
+
 /* ---------- Кейсы ---------- */
 .case {
   position: relative;
@@ -1197,6 +1237,10 @@ p:last-child { margin-bottom: 0; }
   border-bottom: 1px solid rgba(255, 255, 255, .09);
 }
 .footer .logo { color: #fff; margin-bottom: 16px; }
+.footer__brand { color: #fff; margin-bottom: 16px; }
+.footer__brand b { display: block; font-size: 19px; letter-spacing: -.01em; }
+.footer__brand span { display: block; margin-top: 4px; font-size: 11.5px; font-weight: 600; opacity: .55; letter-spacing: .1em; text-transform: uppercase; }
+.footer__legal { margin-top: 16px; font-size: 13px; line-height: 1.6; color: rgba(255, 255, 255, .45); }
 .footer__about { font-size: 15px; line-height: 1.7; max-width: 320px; }
 .footer h4 {
   color: #fff;
@@ -1252,7 +1296,8 @@ p:last-child { margin-bottom: 0; }
     filter .3s, opacity .35s ease, visibility .35s;
 }
 .fab.is-muted .fab__call,
-.fab.is-muted .fab__mail {
+.fab.is-muted .fab__mail,
+.fab.is-muted .fab__wa {
   opacity: 0;
   visibility: hidden;
   transform: translateY(16px) scale(.9);
@@ -1262,6 +1307,7 @@ p:last-child { margin-bottom: 0; }
 .fab button:hover { transform: translateY(-4px) scale(1.03); filter: brightness(1.07); }
 .fab__call { background: var(--cta-grad); color: #241000; }
 .fab__mail { background: var(--brand-grad); }
+.fab__wa { background: linear-gradient(135deg, #2BD07A, #0F9A66); }
 .fab__wa { background: linear-gradient(135deg, #25D366, #128C7E); }
 .fab__top {
   width: 46px;
@@ -1664,6 +1710,7 @@ p:last-child { margin-bottom: 0; }
   .fab__label { display: none; }
   .fab__call { width: 50px; height: 50px; padding: 0 !important; justify-content: center; }
   .fab__mail { width: 50px; height: 50px; padding: 0 !important; justify-content: center; }
+  .fab__wa { width: 50px; height: 50px; padding: 0 !important; justify-content: center; }
 
   .footer__grid { grid-template-columns: 1fr; gap: 26px; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }

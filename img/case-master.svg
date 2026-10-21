@@ -73,7 +73,7 @@
     <g font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#0B2447">
       <rect x="596" y="444" width="196" height="46" rx="23" fill="#EFF5FD"/>
       <path d="M622 467 l7 8 13 -16" stroke="#1B4B8F" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="654" y="473">Фиксированная цена</text>
+      <text x="654" y="473">Понятная цена</text>
       <rect x="806" y="444" width="160" height="46" rx="23" fill="#EFF5FD"/>
       <path d="M832 467 l7 8 13 -16" stroke="#1B4B8F" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
       <text x="864" y="473">Срок в договоре</text>
