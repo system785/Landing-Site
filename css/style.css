@@ -610,7 +610,8 @@ p:last-child { margin-bottom: 0; }
   animation: floatY 7s ease-in-out infinite;
   background: linear-gradient(160deg, #1B2748, #101832);
 }
-.portrait img { width: 100%; height: auto; }
+.portrait img { width: 100%; height: auto; aspect-ratio: 6 / 7; object-fit: cover; object-position: center 20%; }
+.about__media img { width: 100%; height: auto; aspect-ratio: 6 / 7; object-fit: cover; object-position: center 20%; }
 
 .float-card {
   position: absolute;
@@ -1609,7 +1610,7 @@ p:last-child { margin-bottom: 0; }
   border-radius: var(--r-lg);
   margin-top: 40px;
 }
-.author-box img { width: 96px; height: 96px; border-radius: 50%; flex: none; border: 3px solid #fff; box-shadow: var(--sh-sm); }
+.author-box img { width: 96px; height: 96px; object-fit: cover; border-radius: 50%; flex: none; border: 3px solid #fff; box-shadow: var(--sh-sm); }
 .author-box b { display: block; font-size: 18px; }
 .author-box span { display: block; font-size: 14px; color: var(--brand); font-weight: 700; margin-bottom: 6px; }
 .author-box p { font-size: 15px; color: var(--muted); margin: 0; }
