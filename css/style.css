@@ -1308,6 +1308,18 @@ p:last-child { margin-bottom: 0; }
 .fab__call { background: var(--cta-grad); color: #241000; }
 .fab__mail { background: var(--brand-grad); }
 .fab__wa { background: linear-gradient(135deg, #2BD07A, #0F9A66); }
+
+/* Фирменный логотип Max рядом со ссылками на мессенджер */
+.max-logo {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  display: inline-block;
+  vertical-align: -5px;
+  flex: none;
+}
+.btn .max-logo { margin-right: 7px; }
+.fab__wa .max-logo { width: 20px; height: 20px; margin-right: 6px; vertical-align: -4px; }
 .fab__wa { background: linear-gradient(135deg, #25D366, #128C7E); }
 .fab__top {
   width: 46px;
