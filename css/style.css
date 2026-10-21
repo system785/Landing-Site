@@ -1146,7 +1146,7 @@ p:last-child { margin-bottom: 0; }
   background: var(--brand-grad);
   color: #fff;
 }
-.contact-item--wa i { background: linear-gradient(135deg, #25D366, #128C7E); }
+.contact-item--wa i { background: linear-gradient(135deg, #33E28C, #0F9A66); }
 .contact-item--tg i { background: linear-gradient(135deg, #2AABEE, #229ED9); }
 .contact-item--mail i { background: var(--cta-grad); color: #241000; }
 .contact-item span { display: block; font-size: 13px; color: var(--muted-dark); font-weight: 600; }
@@ -1321,7 +1321,12 @@ p:last-child { margin-bottom: 0; }
 }
 .btn .max-logo { margin-right: 7px; }
 .fab__wa .max-logo { width: 20px; height: 20px; margin-right: 6px; vertical-align: -4px; }
-.fab__wa { background: linear-gradient(135deg, #25D366, #128C7E); }
+
+.btn--max { background: linear-gradient(135deg, #33E28C, #0F9A66); color: #fff; border-color: transparent; box-shadow: 0 12px 30px rgba(15, 154, 102, .35); }
+.btn--max:hover { filter: brightness(1.06); box-shadow: 0 18px 38px rgba(15, 154, 102, .45); }
+.link-max { color: #2BD07A; font-weight: 600; }
+.link-max:hover { color: #33E28C; }
+.fab__wa { background: linear-gradient(135deg, #33E28C, #0F9A66); }
 .fab__top {
   width: 46px;
   height: 46px;

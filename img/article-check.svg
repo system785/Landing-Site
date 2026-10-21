@@ -29,7 +29,7 @@
   <text x="220" y="116" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#04210F" text-anchor="middle" letter-spacing="1.5">ПРАКТИКА</text>
 
   <g font-family="Segoe UI, Arial, sans-serif" font-size="60" font-weight="800" fill="#FFFFFF">
-    <text x="80" y="246">8 вопросов</text>
+    <text x="80" y="246">9 вопросов</text>
     <text x="80" y="326">перед выбором</text>
     <text x="80" y="406" fill="url(#a1)">исполнителя</text>
   </g>
