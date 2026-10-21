@@ -280,20 +280,18 @@
       var phone = (data.get('phone') || '').toString();
       var email = (data.get('email') || '').toString();
       var task = (data.get('task') || '').toString();
-      var budget = (data.get('budget') || '').toString();
 
-      var subject = 'Заявка на создание сайта — ' + name;
+      var subject = 'Заказ обратного звонка — ' + name;
       var body = [
         'Имя: ' + name,
         'Телефон: ' + phone,
         'E-mail: ' + email,
-        'Бюджет: ' + budget,
         '',
         'Задача:',
         task
       ].join('\n');
 
-      var mailLink = 'mailto:sty3@yandex.ru?subject=' + encodeURIComponent(subject) +
+      var mailLink = 'mailto:sey3@yandex.ru?subject=' + encodeURIComponent(subject) +
         '&body=' + encodeURIComponent(body);
 
       var success = form.querySelector('.form-success') || form.parentElement.querySelector('.form-success');
