@@ -1664,6 +1664,13 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ---------- Адаптив ---------- */
+@media (max-width: 1520px) {
+  .nav a { padding: 9px 8px; font-size: 14.5px; }
+  .header__actions .link-phone { font-size: 14.5px; }
+  .header__actions .btn { font-size: 14px; padding: 11px 16px; }
+  .header__inner { gap: 12px; }
+}
+
 @media (max-width: 1080px) {
   .nav a { padding: 9px 10px; font-size: 14.5px; }
   .article-wrap { grid-template-columns: minmax(0, 1fr) 290px; gap: 30px; }
