@@ -1786,3 +1786,20 @@ p:last-child { margin-bottom: 0; }
 .fab__wa .max-logo,
 .contact-item--wa .max-logo { filter: brightness(0) invert(1); }
 .link-max .max-logo { margin-right: 5px; }
+
+/* Карточки кейсов со ссылками на реальные проекты */
+.case__img a { display: block; }
+.case__body h3 a.case__title { color: inherit; text-decoration: none; transition: color .2s ease; }
+.case__body h3 a.case__title:hover { color: var(--brand); }
+.case__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  align-self: flex-start;
+  margin: 12px 0 18px;
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+.case__link:hover { text-decoration: underline; }
