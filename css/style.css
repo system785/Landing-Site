@@ -1711,7 +1711,7 @@ p:last-child { margin-bottom: 0; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .stats__grid { grid-template-columns: repeat(2, 1fr); gap: 24px 16px; }
   .about, .contacts { grid-template-columns: 1fr; }
-  .article-wrap { grid-template-columns: 1fr; }
+  .article-wrap { grid-template-columns: minmax(0, 1fr); }
   .aside { position: static; }
   .related { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: repeat(2, 1fr); }
@@ -1740,9 +1740,11 @@ p:last-child { margin-bottom: 0; }
   .step:hover { transform: none; }
 
   .prose { font-size: 16.5px; }
-  .prose table { display: block; overflow-x: auto; white-space: nowrap; }
+  .prose table { display: block; max-width: 100%; overflow-x: auto; }
+  .prose th, .prose td { padding: 10px 9px; font-size: 14px; }
 
-  .fab { right: 12px; bottom: 12px; gap: 9px; }
+  .fab { left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
+    flex-direction: row; justify-content: flex-end; align-items: center; gap: 8px; }
   .fab a, .fab button { padding: 12px 15px; font-size: 14px; }
   .fab__label { display: none; }
   .fab__call { width: 50px; height: 50px; padding: 0 !important; justify-content: center; }
@@ -1770,4 +1772,11 @@ p:last-child { margin-bottom: 0; }
     transition-duration: .001ms !important;
   }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* Содержание — в начале статьи */
+.prose .toc-box { margin: 26px 0 10px; }
+.prose .toc { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 680px) {
+  .prose .toc { grid-template-columns: 1fr; }
 }
