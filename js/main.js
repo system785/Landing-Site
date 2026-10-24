@@ -342,18 +342,28 @@
   }
 
   /* ---------- Кнопки «Написать в «Макс»: с телефона открываем приложение MAX ---------- */
-  /* Все ссылки ведут на https://web.max.ru/79119275337 (веб-версия — работает везде).
-     С Android-телефона клик перехватывается: intent-ссылка открывает приложение MAX
-     сразу в чате (маршрут max://chat/id/79119275337 — формат из официального кода
-     веб-клиента MAX), а если приложение не установлено — веб-версию мессенджера. */
+  /* href у всех ссылок — https://web.max.ru/79119275337 (веб-версия, для компьютера).
+     С телефона клик перехватывается: открывается личная ссылка профиля
+     https://max.ru/u/… — она ведёт сразу в чат в приложении MAX
+     (маршрут подтверждён: сервер отдаёт 403 не-приложению и открывает чат в app).
+     Android — через intent-URL: приложение MAX установлено → чат в приложении,
+     нет приложения → веб-версия мессенджера. iOS — универсальная ссылка max.ru
+     (открывает приложение, если оно установлено). */
+  var maxProfileUrl = 'https://max.ru/u/f9LHodD0cOLaEmVk91ZxmOnWziko3CgrAu_QicId5AvhU61A5cxESIjIlbM';
+
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href*="web.max.ru/79119275337"]');
     if (!link) return;
-    if (!/Android/i.test(navigator.userAgent)) return;
-    e.preventDefault();
-    window.location.href = 'intent://chat/id/79119275337#Intent;scheme=max;' +
-      'package=ru.oneme.app;' +
-      'S.browser_fallback_url=' + encodeURIComponent('https://web.max.ru/79119275337') + ';end';
+    var ua = navigator.userAgent;
+    if (/Android/i.test(ua)) {
+      e.preventDefault();
+      window.location.href = 'intent://max.ru/u/f9LHodD0cOLaEmVk91ZxmOnWziko3CgrAu_QicId5AvhU61A5cxESIjIlbM#Intent;scheme=https;' +
+        'package=ru.oneme.app;' +
+        'S.browser_fallback_url=' + encodeURIComponent('https://web.max.ru/79119275337') + ';end';
+    } else if (/iPhone|iPad|iPod/i.test(ua)) {
+      e.preventDefault();
+      window.location.href = maxProfileUrl;
+    }
   });
 
   /* ---------- Год в подвале ---------- */
