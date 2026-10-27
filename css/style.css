@@ -290,10 +290,10 @@ p:last-child { margin-bottom: 0; }
   gap: 9px;
   font-weight: 800;
   white-space: nowrap;
-  color: var(--brand);
+  color: #FF7A18;
   transition: color .2s ease, transform .2s ease;
 }
-.link-phone:hover { color: var(--brand-2); transform: translateY(-2px); }
+.link-phone:hover { color: #FFA23A; transform: translateY(-2px); }
 .section-dark .link-phone { color: #FFB268; }
 .section-dark .link-phone:hover { color: #FFD1A8; }
 
