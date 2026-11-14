@@ -919,12 +919,14 @@
               <a class="btn btn--brand btn--block mt-24" href="files/forma-zayavki.docx" download>
                 <svg class="icon" aria-hidden="true"><use href="#i-doc"/></svg> Скачать форму заявки
               </a>
-
-              <p class="form-note">
-                Нажимая кнопку, вы соглашаетесь с
-                <a href="privacy.html">политикой конфиденциальности</a> и обработкой персональных данных.
-                Заявка откроется в вашем почтовом клиенте — адрес: sey3@yandex.ru.
-              </p>
+              <div class="field field--check">
+                <label class="check">
+                  <input type="checkbox" name="consent" required>
+                  <span>Я даю согласие на обработку персональных данных в соответствии с <a href="privacy.html">политикой конфиденциальности</a></span>
+                </label>
+                <span class="field__error">Необходимо дать согласие на обработку персональных данных</span>
+              </div>
+              <p class="form-note">Заявка откроется в вашем почтовом клиенте — адрес: sey3@yandex.ru.</p>
 
               <div class="form-success" role="status">
                 <i><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></i>

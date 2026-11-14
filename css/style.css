@@ -1234,6 +1234,28 @@ p:last-child { margin-bottom: 0; }
 }
 .form-note a { color: var(--brand); text-decoration: underline; font-weight: 700; }
 
+.field--check { margin-top: 16px; }
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+  cursor: pointer;
+  font-weight: 600;
+}
+.check input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  flex: none;
+  accent-color: var(--brand);
+  cursor: pointer;
+}
+.check a { color: var(--brand); text-decoration: underline; font-weight: 700; }
+.field--check.field--error .check { color: var(--red); }
+
 .form-success {
   display: none;
   text-align: center;

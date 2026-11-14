@@ -363,7 +363,13 @@
         <button class="btn btn--cta btn--block btn--lg mt-24" type="submit">
           Отправить заявку <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
         </button>
-        <p class="form-note">Нажимая кнопку, вы соглашаетесь с <a href="../privacy.html">политикой конфиденциальности</a>.</p>
+              <div class="field field--check">
+                <label class="check">
+                  <input type="checkbox" name="consent" required>
+                  <span>Я даю согласие на обработку персональных данных в соответствии с <a href="../privacy.html">политикой конфиденциальности</a></span>
+                </label>
+                <span class="field__error">Необходимо дать согласие на обработку персональных данных</span>
+              </div>
         <div class="form-success" role="status">
           <i><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></i>
           <h4>Заявка сформирована!</h4>
