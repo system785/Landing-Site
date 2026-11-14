@@ -1257,7 +1257,7 @@ p:last-child { margin-bottom: 0; }
 .footer {
   background: #060A14;
   color: #98A2BE;
-  padding: clamp(44px, 6vw, 68px) 0 26px;
+  padding: clamp(44px, 6vw, 68px) 0 110px;
   border-top: 1px solid rgba(255, 255, 255, .07);
 }
 .footer__grid {
