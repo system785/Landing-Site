@@ -1279,7 +1279,7 @@ p:last-child { margin-bottom: 0; }
 .footer {
   background: #060A14;
   color: #98A2BE;
-  padding: clamp(44px, 6vw, 68px) 0 110px;
+  padding: clamp(44px, 6vw, 68px) 0 140px;
   border-top: 1px solid rgba(255, 255, 255, .07);
 }
 .footer__grid {
@@ -1316,7 +1316,10 @@ p:last-child { margin-bottom: 0; }
   align-items: center;
   justify-content: space-between;
   padding-top: 22px;
+  padding-right: 90px;
   font-size: 14px;
+  position: relative;
+  z-index: 1;
 }
 .footer__bottom a { text-decoration: underline; text-underline-offset: 3px; }
 .footer__bottom a:hover { color: var(--cta-2); }
