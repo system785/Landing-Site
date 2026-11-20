@@ -1,7 +1,7 @@
 # Landing Site — продающий лендинг для услуги «Создание сайтов для бизнеса»
 
 Продающая одностраничная модель + блог статей для SEO. Адрес сайта:
-**https://system785.github.io/Landing-Site/**
+**https://landing-site.ru/**
 
 Репозиторий: **https://github.com/system785/Landing-Site**
 

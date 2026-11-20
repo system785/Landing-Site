@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Карта сайта проекта «Создание сайтов для бизнеса»
-  Адрес сайта:  https://system785.github.io/Landing-Site/
+  Адрес сайта:  https://landing-site.ru/
   Репозиторий:  https://github.com/system785/Landing-Site
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://system785.github.io/Landing-Site/</loc>
+    <loc>https://landing-site.ru/</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://system785.github.io/Landing-Site/articles.html</loc>
+    <loc>https://landing-site.ru/articles.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://system785.github.io/Landing-Site/articles/skolko-stoit-sayt-yandex-direct.html</loc>
+    <loc>https://landing-site.ru/articles/skolko-stoit-sayt-yandex-direct.html</loc>
     <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://system785.github.io/Landing-Site/articles/lending-ili-sayt-vizitka.html</loc>
+    <loc>https://landing-site.ru/articles/lending-ili-sayt-vizitka.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://system785.github.io/Landing-Site/articles/voprosy-pered-zakazom-sayta.html</loc>
+    <loc>https://landing-site.ru/articles/voprosy-pered-zakazom-sayta.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://system785.github.io/Landing-Site/articles/seo-stati-ranzhirovanie.html</loc>
+    <loc>https://landing-site.ru/articles/seo-stati-ranzhirovanie.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://system785.github.io/Landing-Site/privacy.html</loc>
+    <loc>https://landing-site.ru/privacy.html</loc>
     <lastmod>2026-10-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
